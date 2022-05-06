@@ -75,34 +75,6 @@ body {
     height: 50px;
 }
 
-.profile_photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile_photo img {
-    height: 6rem;
-}
-
-.insta_user {
-    background-color: #0095f6;
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.insta_logout {
-    color: #0095f6;
-    margin-top: 1rem;
-}
-
-.not_account {
-    color: rgb(160, 160, 160);
-}
-
 .link_blue {
     color: #0095f6;
 }
@@ -123,6 +95,56 @@ body {
     line-height: 18px;
     margin: 10px 20px 10px 20px;
     text-align: center;
+}
+
+.user {
+    margin: 40px 0 5px 0;
+    padding: 10px 0 10px 5px;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: rgb(248, 248, 248);
+}
+
+.password {
+    margin-bottom: 20px;
+    padding: 10px 0 10px 5px;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: rgb(248, 248, 248);
+}
+
+button {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #bbe4ff;
+    border: 1px solid #bbe4ff; 
+    border-radius: 4px;
+}
+
+.l1 {
+    font-weight: 600;
+    color: #3B5997;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.face_link {
+    display: flex;
+    align-items: center;
+}
+
+.face_link img {
+    margin-right: 7px;
+}
+
+.l2 {
+    font-size: 12px;
 }
 
 .download {
@@ -162,6 +184,10 @@ body {
     }
 
     .insta_box {
+        border: 1px solid transparent;
+    }
+
+    .insta_box2 {
         border: 1px solid transparent;
     }
 
