@@ -5,14 +5,21 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     font-size: 14px;
+}
+
+:root {
+    --cor01: rgb(255, 255, 255);
+    --cor02: rgb(243, 243, 243);
+    --cor03: lightgray;
+    --cor04: rgb(248, 248, 248);
 }
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--cor02);
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,50 +28,54 @@ body {
 
 .instagram {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 60%;
-    height: 100vh;
+    align-items: center;
+    margin: 32px auto 0;
+    max-width: 935px;
+    padding-bottom: 32px;
+    width: 100%;
 }
 
 .insta_phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    margin-right: 32px;
 }
 
 .insta_phone img {
-    height: 50rem;
+    height: 700px;
+    padding: 50px 0;
 }
 
 .insta_login {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    min-height: 480px;
+    max-width: 350px;
+    margin-top: 12px;
 }
 
 .insta_box {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--cor01);
     width: 100%;
-    padding: 40px 25px;
-    padding-bottom: 15px;
-    border: 1px solid lightgray;
+    margin: 0 0 10px;
+    padding: 45px 35px 20px 35px;
+    border: 1px solid var(--cor03);
+    border-radius: 1px;
 }
 
 .insta_box2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--cor01);
     width: 100%;
-    padding: 25px 10px;
-    border: 1px solid lightgray;
+    padding: 25px 0;
+    border: 1px solid var(--cor03);
 }
 
 .insta_box:nth-child(1) {
@@ -75,19 +86,11 @@ body {
     height: 50px;
 }
 
-.link_blue {
-    color: #0095f6;
-}
-
-.link_blue :active {
-    color: #64c1ff;
-}
-
 .get_the_app {
     flex-direction: row;
     -webkit-box-pack: center;
     justify-content: center;
-    margin: 10px 0 10px 0;
+    margin-top: 10px;
 }
 
 .get_app {
@@ -102,9 +105,9 @@ body {
     padding: 10px 0 10px 5px;
     font-size: 12px;
     width: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid var(--cor03);
     border-radius: 3px;
-    background-color: rgb(248, 248, 248);
+    background-color: var(--cor04);
 }
 
 .password {
@@ -112,39 +115,48 @@ body {
     padding: 10px 0 10px 5px;
     font-size: 12px;
     width: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid var(--cor03);
     border-radius: 3px;
-    background-color: rgb(248, 248, 248);
+    background-color: var(--cor04);
 }
 
 button {
     width: 100%;
     padding: 5px 0 5px 0;
-    color: #ffffff;
-    font-weight: bold;
-    background-color: #bbe4ff;
-    border: 1px solid #bbe4ff; 
-    border-radius: 4px;
-}
-
-.l1 {
+    color: var(--cor01);
     font-weight: 600;
-    color: #3B5997;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background-color: #b2dffc;
+    border: 1px solid #b2dffc; 
+    border-radius: 4px;
 }
 
 .face_link {
     display: flex;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .face_link img {
     margin-right: 7px;
 }
 
+.face_link a {
+    text-decoration: none;
+    color:#385185;
+    font-weight: 600;
+}
+
 .l2 {
     font-size: 12px;
+    text-decoration: none;
+    color: #426079;
+}
+
+.not_account a {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: 600;
 }
 
 .download {
@@ -171,12 +183,6 @@ button {
 }
 
 /* media queries */
-
-@media (max-width: 1024px) {
-    .instagram {
-        width: 70%;
-    }
-}
 
 @media (max-width: 900px) {
     body {
