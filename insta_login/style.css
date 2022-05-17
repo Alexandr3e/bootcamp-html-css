@@ -16,6 +16,31 @@
     --cor04: rgb(248, 248, 248);
 }
 
+/*
+"------ou-----"
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+main .alternative span::after {
+    left: 50px;
+}*/
+
+
 body {
     width: 100%;
     min-height: 100vh;
